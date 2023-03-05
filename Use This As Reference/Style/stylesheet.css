@@ -1,0 +1,498 @@
+html, body{ 
+    height: 100%;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:#4a4a4d;
+    position: relative;
+    padding-bottom:40px;
+    min-height: 100vh;
+}
+
+/*---------------------------------------------NavBar #507786 ----------------------------------------------*/
+
+nav{
+    width:100%;
+    height:100px;
+    min-width:80%;
+    padding:10px 10px;
+     box-sizing:content-box;
+    background:#0e2027;
+    opacity: 0.8;
+    background-size:100% 100%;
+    background-position:center;
+}
+
+/*------------------NavBar Website Logo-------------------*/
+
+.logo{
+    padding 0px;
+    margin: 0px;
+    float:left;
+    height: 50%;
+}
+
+
+
+/*----------------NavBar Button Position------------------*/
+
+nav ul{
+    list-style:none;
+    float:right;
+    margin:0px auto;
+    padding:0px auto;
+    display:flex;
+}
+
+/*----------------NavBar Button Design--------------------*/
+
+nav ul li a, .dropbtn{
+    color:#a9b3b9;
+    line-height:80px;
+    padding:12px 15px;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:sans-serif;
+    font-size:13px;
+    font-weight:bold;
+}
+
+nav ul li a:hover, .dropdown:hover .dropbtn{
+    background:#0b1b21;
+    border-radius:6px;
+    color:white;    
+}
+
+nav ul li a.active{
+    background:#3c3c40;
+    border-radius:6px;
+    color:white;
+}
+
+/*---------------------------------------------Containers----------------------------------------------*/
+
+.main{
+    position: relative;
+    border-radius:7px;
+    padding-bottom: 40px;
+    margin-top: 1px;
+    background-color: #4a4a4d; 
+    width: auto;
+    height: 660px;  
+}
+
+.cntnr00{
+    position: relative;
+    border-radius:7px;
+    padding-bottom: 40px;
+    margin-top: 1px;
+    background:url('kitchen00.png');
+    background-size: auto;
+    background-size:100% 100%;
+    background-position: center;
+    width: auto;
+    height: 660px;  
+}
+
+.cntnr01{
+    padding: 25px;
+    background-color: #3c3c40;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: auto;
+    height: 650px;
+    opacity: 0.8;
+}
+
+.cntnr01 h1{
+    font-family: 'PT Sans', sans-serif;
+    margin: 200px;
+    text-align: center;
+    color:white;
+    font-size:384%;
+    
+}
+
+.cntnr01 p{
+    font-family: 'PT Sans', sans-serif;
+    margin: 100px;
+    text-align: center;
+    top: 150%;
+    color: white;
+    font-size: 200%;  
+    
+}
+
+
+.cntnr01Error p{
+    position:static ;
+    font-family: 'PT Sans', sans-serif;
+    margin: 80px;
+    text-align: center;
+    top: 100%;
+    color: indianred;
+    font-size: 210%;  
+    backface-visibility: visible;
+    background-color: black;
+}
+
+
+.cntnr02{
+    position: relative;
+    border-radius:7px;
+    padding-bottom: 40px;
+    margin-top: 1px;
+    background-color: #4a4a4d;
+    background-size: auto;
+    background-size:100% 100%;
+    background-position: center;
+    width: auto;
+    height: 660px;  
+}
+
+.cntnr02 h1{
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size:250%;
+    font-weight: bolder;
+    text-align: center;
+    
+}
+
+.sec1{
+    height: 160px;
+    background-size: cover;
+    background-image: url(restaurant012.png);
+    
+}
+
+.sec2{
+    height: 52px;
+    padding:12px 15px;
+    background-size: cover;
+    background-image: url(img024.png);
+}
+
+
+/*---------------------------------------------Forms/Sheets----------------------------------------------*/
+
+.sheet{
+    width: auto;
+    height: 536px;
+    padding:2px;
+    background-color:#394545;  
+}
+
+.sheet input[type="submit"]{
+    height: 60px;
+    width: 150px;
+    color:white;
+    margin: auto;    
+    background-color:#3c3c40;
+    border: 4px solid #0e2027;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+    font-style:bold; 
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.sheet input[type="submit"]:hover{
+    color:white;
+    background-color:#0e2027;
+}
+
+
+
+.sheet table{
+    color:blue;
+    font-style:bold;
+    font-size:5;
+}
+
+fieldset{
+    background-color: #bababa;
+    border: 2px solid #3c3c40;
+    border-radius: 5px;
+    padding:10px;
+    margin:10px auto;
+    width:500;
+}
+
+fieldset p, label{
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+legend{
+    font-family: 'PT Sans', sans-serif;
+    background: #fbbb74;  
+    border: 5px solid #3c3c40;
+    border-radius: 5px;
+    width: 195px;
+    padding:10px;
+}
+
+legend h3{
+    color: #994122;
+    font-size: 20px;
+}
+
+label{
+    margin-bottom:10px;
+    display:block;
+}
+
+textarea{
+    padding:0px;
+    height: 50px;
+    display: block;
+}
+
+hr{
+    border:1px solid #3c3c40;
+}
+
+textarea{
+    height: 50px;
+    width: 500px;
+    margin-bottom:5px;
+}
+
+
+
+/*--------------------------------------------Button-----------------------------------------------*/
+
+a.button{
+    height: 80px;
+    width: 200px;
+    color: white;
+    transition: 0.5s;
+    border: 4px solid #0e2027;
+    border-radius: 2em;
+    cursor: pointer;
+    position: absolute;
+    margin: auto;    
+}
+
+a.button>span{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+a.btn1{
+    background:-webkit-linear-gradient(0deg,transparent 50%,#0e2027 50%);
+    background-size:400px 80px;
+    left: 0;
+    right: 0%;
+    top: 10%;
+    bottom: 0;
+}
+
+a.btn1:hover{
+    background-position: 200px 0;
+    color: white;
+}
+
+a.btn2{
+    background:-webkit-linear-gradient(0deg,transparent 50%,#0e2027 50%);
+    background-size:400px 80px;
+    left: 18%;
+    right: 0;
+    top: 10%;
+    bottom: 0;
+}
+
+a.btn2:hover{
+    background-position: 200px 0;
+    color: white;
+}
+
+
+/*---------------------------------------------Footer----------------------------------------------*/
+
+.footer{
+    background: #0e2027;
+    width: 100%;
+    height: 3.3em;
+    box-shadow: 0 -2px 5px #888;
+    line-height: 3em;
+    display: flex;
+    flex-direction: row;  
+    font-size: .8em;
+    justify-content: space-around;
+    overflow: hidden;
+}
+    
+.footer p{
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+/* Added by Larry Ullman: */
+.error, .ad {
+	font-weight: bold;
+	color: #C00
+}
+
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+/*----------------------Drop Down Menu----------------------------------*/
+
+
+
+
+.dropbtn {
+  
+  color: grey;
+  padding: 8px;
+ border-radius:8px;
+  cursor: pointer;
+  color:#a9b3b9;
+    
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius:4px;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: grey;
+  min-width: 160px;
+  box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: inline-block;
+    
+}
+
+.dropdown-content a:hover {background-color: grey}
+
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+    border-radius:4px;
+}
+
+.rcorners2 {
+  border-radius: 30px;
+  border: 16px solid black;
+  padding: 50px; 
+  width: -300px;
+  height: 100px;  
+  text-align: center;
+  position: relative;
+    float: left;
+
+    
+}
+
+
+/*----------------------MODAL BOX----------------------------------*/
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}

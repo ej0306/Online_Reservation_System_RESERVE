@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Reservé Feedback</title>
+    <link href="reviewStyle.css" rel="stylesheet" type="text/css">
+    <link href="reviews.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="STYLE/stylesheet.css" type="text/css">
+    
+</head>
+<body>
+<div class="Header">
+        <div class="topnav">
+        <div class="logo"> <img src="STYLE/logo12.png" height="120%"></div>
+          <a href="#">Reviews</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <a href="view_menu.html">Menu</a>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="make_reservation.php" class="active">My Reservation</a></button>
+            <div class="dropdown-content">
+              <a href="view_reservation.php" class="active">View</a>
+              <a href="modify_reservation.php">Modify</a>
+            </div>
+        </div> 
+              <a href="home.html">Home</a>
+        </div>
+</div>
+
+<div class="content home">
+    <h2>Reviews</h2>
+    <p>Check out the below reviews for our website.</p>
+    <div class="reviews"></div>
+    <script>
+        const reviews_page_id = 1;
+        fetch("reviews.php?page_id=" + reviews_page_id).then(response => response.text()).then(data => {
+            document.querySelector(".reviews").innerHTML = data;
+            document.querySelector(".reviews .write_review_btn").onclick = event => {
+                event.preventDefault();
+                document.querySelector(".reviews .write_review").style.display = 'block';
+                document.querySelector(".reviews .write_review input[name='name']").focus();
+            };
+            document.querySelector(".reviews .write_review form").onsubmit = event => {
+                event.preventDefault();
+                fetch("reviews.php?page_id=" + reviews_page_id, {
+                    method: 'POST',
+                    body: new FormData(document.querySelector(".reviews .write_review form"))
+                }).then(response => response.text()).then(data => {
+                    document.querySelector(".reviews .write_review").innerHTML = data;
+                });
+            };
+        });
+    </script>
+</div>
+</body>
+</html>
