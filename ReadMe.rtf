@@ -1,35 +1,22 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2512
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+Before Opening the Admin file. You should follow these steps.
 
-\f0\fs24 \cf0 \
-Before Opening the Admin file. You should follow these steps.\
-\
-1. Go to localhost/phpmyadmin (for Windows)\
-	- localhost:8080/phpmyadmin (for Mac)\
-\
-2. Click the toolbar \'93Database\'94\
-3. Create new database called \'93reservation\'94\
-4. Look for the toolbar called \'93Import\'94 and import the sql file called \'93reservation\'94\
-\
-5. Open terminal on xammp and create a new database called \'93reservation_made\'94. \
-	*NOTE: importing the file caled \'93reservation_made\'94 using phpmyadmin will not work.\
-\
-6. Once database is created, manually create a table called \'93reservation_made\'94.\
-	*NOTE: could also copy the text file. It can be found inside Admin/db/reservation_made.sql\
-\
-7. Once everything is set go to localhost/Admin/index.php\
-\
-8- The user part uses 
-\f1\b mysqli_connectReservation.php
-\f0\b0  to connect to the databases. The variable @dbc which enables the connection use a private MYSQL username and password instead of root so  you are going to have to use your mysql username and password instead of the one used in the file  
-\f1\b mysqli_connectReservation.php
-\f0\b0 \
-\
-\
-Username: admin\
-Password: 123\
-}
+1. Go to localhost/phpmyadmin (for Windows)
+	- localhost:8080/phpmyadmin (for Mac)
+
+2. Click the toolbar “Database”
+3. Create new database called “reservation”
+4. Look for the toolbar called “Import” and import the sql file called “reservation”
+
+5. Open terminal on xammp and create a new database called “reservation_made”. 
+	*NOTE: importing the file caled “reservation_made” using phpmyadmin will not work.
+
+6. Once database is created, manually create a table called “reservation_made”.
+	*NOTE: could also copy the text file. It can be found inside Admin/db/reservation_made.sql
+
+7. Once everything is set go to localhost/Admin/index.php
+
+8- The user part uses mysqli_connectReservation.php to connect to the databases. The variable @dbc which enables the connection use a private MYSQL username and password instead of root so  you are going to have to use your mysql username and password instead of the one used in the file  mysqli_connectReservation.php
+
+
+Username: admin
+Password: 123
