@@ -22,7 +22,29 @@ This is a README file for the Reservation System project. Before opening the Adm
 
 To access the user part of the system, the file `mysqli_connectReservation.php` is used to connect to the databases. The variable `@dbc` in this file enables the connection using a private MySQL username and password instead of the default "root" user. Therefore, you will need to use your own MySQL username and password instead of the ones used in the `mysqli_connectReservation.php` file.
 
-- Username: admin
-- Password: 123
-
 Now you are ready to use the Reservation System.
+
+
+## Screenshots of the website
+
+### Homepage
+![Homepage](https://github.com/ej0306/Reserve/assets/54604143/3a086b13-64a4-4d8f-b2d6-a14790d4b693)
+![Inside Homepage](https://github.com/ej0306/Reserve/assets/54604143/31a43b06-b23a-44c2-b9b7-dcc729505b12)
+
+### Make a reservation page
+![Make Reservation](https://github.com/ej0306/Reserve/assets/54604143/c266b9ac-9b95-4444-9179-223884802296)
+
+### Modify created reservation
+![Modify Created Reservation](https://github.com/ej0306/Reserve/assets/54604143/d7992f68-5853-421e-a158-95a032a6b63e)
+
+### View created reservation
+![View Created Reservation](https://github.com/ej0306/Reserve/assets/54604143/2460eff4-446f-4478-a064-2ec481e6f612)
+
+### Write a review
+![Write a Review](https://github.com/ej0306/Reserve/assets/54604143/3e604c91-ebfc-477d-a237-87a10125098b)
+
+
+### Admin Site/Dashboard
+![Administrative Dashboard](https://github.com/ej0306/Reserve/assets/54604143/23af4d77-a61d-4e74-9083-3ad30325e36a)
+
+
