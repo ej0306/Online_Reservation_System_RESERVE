@@ -1,22 +1,28 @@
-Before Opening the Admin file. You should follow these steps.
+# Reservation System
 
-1. Go to localhost/phpmyadmin (for Windows)
-	- localhost:8080/phpmyadmin (for Mac)
+This is a README file for the Reservation System project. Before opening the Admin file, please follow the steps below.
 
-2. Click the toolbar “Database”
-3. Create new database called “reservation”
-4. Look for the toolbar called “Import” and import the sql file called “reservation”
+## Prerequisites
 
-5. Open terminal on xammp and create a new database called “reservation_made”. 
-	*NOTE: importing the file caled “reservation_made” using phpmyadmin will not work.
+- XAMPP or a similar local development environment is set up on your computer.
 
-6. Once database is created, manually create a table called “reservation_made”.
-	*NOTE: could also copy the text file. It can be found inside Admin/db/reservation_made.sql
+## Installation
 
-7. Once everything is set go to localhost/Admin/index.php
+1. Open your preferred web browser and navigate to `localhost/phpmyadmin` (for Windows) or `localhost:8080/phpmyadmin` (for Mac).
+2. Click on the toolbar labeled "Database".
+3. Create a new database called "reservation".
+4. Look for the toolbar labeled "Import" and import the SQL file named "reservation.sql".
+5. Open the terminal in XAMPP and create a new database called "reservation_made".
+   - Note: Importing the file named "reservation_made.sql" using phpMyAdmin will not work.
+6. Once the database is created, manually create a table called "reservation_made".
+   - Note: Alternatively, you can copy the content from the text file located at `Admin/db/reservation_made.sql`.
+7. Make sure everything is set up correctly, and then go to `localhost/Admin/index.php`.
 
-8- The user part uses mysqli_connectReservation.php to connect to the databases. The variable @dbc which enables the connection use a private MYSQL username and password instead of root so  you are going to have to use your mysql username and password instead of the one used in the file  mysqli_connectReservation.php
+## User Credentials
 
+To access the user part of the system, the file `mysqli_connectReservation.php` is used to connect to the databases. The variable `@dbc` in this file enables the connection using a private MySQL username and password instead of the default "root" user. Therefore, you will need to use your own MySQL username and password instead of the ones used in the `mysqli_connectReservation.php` file.
 
-Username: admin
-Password: 123
+- Username: admin
+- Password: 123
+
+Now you are ready to use the Reservation System.
